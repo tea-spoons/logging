@@ -164,13 +164,17 @@ In Unity: **Window > Package Manager > + > Add package from git URL**, then ente
 https://github.com/tea-spoons/logging.git
 ```
 
-Pin a release by appending a tag, for example `#v1.3.8`.
+Pin a release by appending a tag, for example `#v1.4.0`.
 
 ### Dependencies
 
-Unity cannot resolve git dependencies automatically, so add these to your project first:
+None. Logging works on its own and installs from the git URL without adding anything else.
 
-- `com.tea-spoons.package-core` 1.0.0
+It uses the optional package below when your project has it (Unity detects it automatically) and falls back to plain behaviour when it does not.
+
+| Package | Used for |
+|---|---|
+| Package Core (`com.tea-spoons.package-core` 1.0.0+) | The shared `TeaSpoons/` menu root and the `GUIColor` helper of the **Log Levels** editor window. Without it the window looks and works the same, at `TeaSpoons/Logging/Log Levels`, using small built-in equivalents. |
 
 ## Change plan
 

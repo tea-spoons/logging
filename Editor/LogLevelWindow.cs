@@ -6,7 +6,9 @@ namespace TeaSpoons.Logging.Editor
     using System.Collections.Generic;
     using System;
     using System.Text;
+#if TEASPOONS_PACKAGE_CORE
     using TeaSpoons.PackageCore;
+#endif
 
     /// <summary>
     /// An EditorWindow that allows to forcibly override the max log level of every <see cref="LogCategory"/> declared in the project.
@@ -25,6 +27,13 @@ namespace TeaSpoons.Logging.Editor
             }
         }
 
+        // Same menu root as the other TeaSpoons packages. Taken from package-core when the project has it.
+#if TEASPOONS_PACKAGE_CORE
+        private const string menuRoot = PackageCore.Editor.Menus.RootItem;
+#else
+        private const string menuRoot = "TeaSpoons/";
+#endif
+
         private const string editorPrefsKey = "TeaSpoons.Logging.LogLevelWindow.settings";
         private const int groupSize = 4;
         private static readonly Dictionary<LogLevel, LogLevelInfo> logLevelInfos = new Dictionary<LogLevel, LogLevelInfo>();
@@ -41,7 +50,7 @@ namespace TeaSpoons.Logging.Editor
             LoadAndApplySettings();
         }
 
-        [MenuItem(PackageCore.Editor.Menus.RootItem + "Logging/Log Levels")]
+        [MenuItem(menuRoot + "Logging/Log Levels")]
         private static void Open()
         {
             var window = GetWindow<LogLevelWindow>();

@@ -3,8 +3,8 @@
     "rootNamespace": "TeaSpoons.Logging.Editor",
     "references": [
         "GUID:4b5b79d9ea689ad42946c84b86fa6e8f",
-        "GUID:8da508d980990b740ae19fbce055a6b6",
-        "GUID:0dbd9e6df9968c04aaf1b8b452dd9495"
+        "TeaSpoons.PackageCore",
+        "TeaSpoons.PackageCore.Editor"
     ],
     "includePlatforms": [
         "Editor"
@@ -15,6 +15,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "com.tea-spoons.package-core",
+            "expression": "1.0.0",
+            "define": "TEASPOONS_PACKAGE_CORE"
+        }
+    ],
     "noEngineReferences": false
 }
