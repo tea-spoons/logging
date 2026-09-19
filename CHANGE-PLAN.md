@@ -17,7 +17,7 @@ Originally developed at Bigpoint. Published here with Bigpoint's permission for 
 ## Planned changes
 
 - [x] Tag and publish `v1.3.8` with the Release workflow.
-- [ ] Tag and publish `v1.4.0` with the Release workflow.
+- [x] Tag and publish `v1.4.0` with the Release workflow.
 - [ ] Run this package's tests in CI with `unity-ci-kit` (needs a small test-project helper in the kit).
 - [ ] Recreate the removed logging analyzer as original code, or drop it.
 
