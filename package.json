@@ -1,0 +1,22 @@
+{
+  "name": "com.tea-spoons.logging",
+  "version": "1.3.8",
+  "displayName": "Logging",
+  "description": "Lightweight, modular logging.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.tea-spoons.package-core": "1.0.0"
+  },
+  "keywords": [
+    "Logging"
+  ],
+  "author": {
+    "name": "Muhammad Tarek Abdou",
+    "email": "muhammadtarekabdou@gmail.com",
+    "url": "https://github.com/MuhammadTarek0"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "documentationUrl": "https://github.com/tea-spoons/logging#readme",
+  "licensesUrl": "https://github.com/tea-spoons/logging/blob/main/LICENSE.md",
+  "changelogUrl": "https://github.com/tea-spoons/logging/blob/main/CHANGELOG.md"
+}
