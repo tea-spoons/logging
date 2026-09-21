@@ -1,6 +1,6 @@
 {
   "name": "com.tea-spoons.logging",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "displayName": "Logging",
   "description": "Lightweight, modular logging.",
   "unity": "2022.3",

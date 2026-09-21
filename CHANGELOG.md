@@ -1,3 +1,7 @@
+## [1.4.1] - 2026-09-21
+
+- No code changes. Independent development continues from this release, outside of Bigpoint; 1.4.0 was the last version developed there.
+
 ## [1.3.8] - 2025-04-07
 - Added Roslyn analyzer that makes sure that the null conditional operator is used for `Log()` calls.
 
